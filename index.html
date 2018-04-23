@@ -1,98 +1,12 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-</head>
-
-<body>
-    <nav class="nav navbar-expand-lg navbar-light bg-light">
-        &nbsp;
-        <a class="navbar-brand bold" href="#">Gutenberg Demo</a>
-    </nav>
-    <br>
-    <br>
-    <div class="container row" align="right">
-        <div class="col">
-                <label>Preference</label>
-            <select id="preferenceuserone" class="">
-                <option value="ZH">Chinese (Mandarin)</option>
-                <option value="CS">Czech</option>
-                <option value="DA">Danish</option>
-                <option value="NL">Dutch</option>
-                <option value="EN" selected="selected">English</option>
-                <option value="ET">Estonian</option>
-                <option value="FR">French</option>
-                <option value="KA">Georgian</option>
-                <option value="DE">German</option>
-                <option value="HI">Hindi</option>
-                <option value="HU">Hungarian</option>
-                <option value="LA">Latin</option>
-                <option value="LV">Latvian</option>
-                <option value="LT">Lithuanian</option>
-                <option value="SR">Serbian</option>
-                <option value="CY">Welsh</option>
-                <option value="XH">Xhosa</option>
-            </select>
-
-            <div id="English"></div>
-            <br>
-            <textarea id="txtSourceUserOne" rows="3" cols="30"></textarea>
-            <br>
-            <button id="EnglishButton" class="btn btn-primary ">send</button>
-        </div>
-        <div class="col">
-<label>Preference</label>
-            <select id="preferenceusertwo">
-                
-                <option value="ZH">Chinese (Mandarin)</option>
-                <option value="CS">Czech</option>
-                <option value="DA">Danish</option>
-                <option value="NL">Dutch</option>
-                <option value="EN">English</option>
-                <option value="ET">Estonian</option>
-                <option value="FR" selected="selected">French</option>
-                <option value="KA">Georgian</option>
-                <option value="DE">German</option>
-                <option value="HI">Hindi</option>
-                <option value="HU">Hungarian</option>
-                <option value="LA">Latin</option>
-                <option value="LV">Latvian</option>
-                <option value="LT">Lithuanian</option>
-                <option value="SR">Serbian</option>
-                <option value="CY">Welsh</option>
-                <option value="XH">Xhosa</option>
-            </select>
-            <br>
-            <div id="French">
-
-            </div>
-            <br>
-            <textarea id="txtSourceUserTwo" rows="3" cols="30"></textarea>
-            <br>
-            <button id="FrenchButton" class="btn btn-primary">send</button>
-        </div>
-    </div>
-
-
-
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        function translate() {
-            var url =
-                "https://translation.googleapis.com/language/translate/v2?key=AIzaSyDGdenj7FmQZcxq-W0avQnHO05-LwfHdqo";
-            url += "&source=" + $("#ddlSource").val();
-            url += "&target=" + $("#ddlTarget").val();
-            url += "&q=" + escape($("#txtSource").val());
-            $.get(url, function (data, status) {
-                $("#txtTarget").val(data.data.translations[0].translatedText);
-            });
-        }
-    </script>
-
-    <script src="./main.js"></script>
-
-</body>
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gutenberg</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    </body>
 </html>
